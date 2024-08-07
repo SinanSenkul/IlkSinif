@@ -30,10 +30,12 @@
         student2.Name = "alper";
         student2.LastName = "karalarlı";
         student2.BirthDate = "1997";
+        Console.WriteLine($"Öğrencinin adı {student2.Name}, soyadı {student2.LastName} ve doğum tarihi {student2.BirthDate}");
 
         Person teacher = new Person();
         teacher.Name = "sertan";
         teacher.LastName = "bozkuş";
         teacher.BirthDate = "1990";
+        Console.WriteLine($"Öğretmenin adı {teacher.Name}, soyadı {teacher.LastName} ve doğum tarihi {teacher.BirthDate}");
     }
 }
