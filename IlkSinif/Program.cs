@@ -18,6 +18,10 @@
         get { return birthDate; }
         set { birthDate = value; }
     }
+}
+
+class Program
+{
     static void Main(string[] args)
     {
         Person student1 = new Person();
