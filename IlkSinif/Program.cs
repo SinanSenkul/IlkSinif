@@ -18,6 +18,17 @@
         get { return birthDate; }
         set { birthDate = value; }
     }
+
+    public void LogInfoStudent()
+    {
+        Console.WriteLine($"Öğrencinin adı {name}, soyadı {lastname} ve doğum tarihi {birthDate}");
+        Console.WriteLine("");
+    }
+    public void LogInfoTeacher()
+    {
+        Console.WriteLine($"Öğretmenin adı {name}, soyadı {lastname} ve doğum tarihi {birthDate}");
+        Console.WriteLine("");
+    }
 }
 
 class Program
@@ -28,18 +39,18 @@ class Program
         student1.Name = "sinan";
         student1.LastName = "şenkul";
         student1.BirthDate = "04.09.1989";
-        Console.WriteLine($"Öğrencinin adı {student1.Name}, soyadı {student1.LastName} ve doğum tarihi {student1.BirthDate}");
+        student1.LogInfoStudent();
 
         Person student2 = new Person();
         student2.Name = "alper";
         student2.LastName = "karalarlı";
         student2.BirthDate = "1997";
-        Console.WriteLine($"Öğrencinin adı {student2.Name}, soyadı {student2.LastName} ve doğum tarihi {student2.BirthDate}");
+        student2.LogInfoStudent();
 
         Person teacher = new Person();
         teacher.Name = "sertan";
         teacher.LastName = "bozkuş";
         teacher.BirthDate = "1990";
-        Console.WriteLine($"Öğretmenin adı {teacher.Name}, soyadı {teacher.LastName} ve doğum tarihi {teacher.BirthDate}");
+        teacher.LogInfoTeacher();
     }
 }
